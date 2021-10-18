@@ -1,0 +1,11 @@
+<div class="inp">
+  <h5>Enter a task you want to add</h5>
+  <input #temp type="text" class="fld" placeholder="Enter a task and click on add">
+  <button class="bt" (click)="onclick(temp)">Add</button><br>
+  <h3>Tasks are shown below</h3>
+  <ul>
+    <li *ngFor= "let subject of arr">{{subject}}</li>
+  </ul>
+  <button (click)="random()">Show Number of tasks</button><br>
+  <h3>Number of tasks currently active are: {{len}}</h3>
+</div>
